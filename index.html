@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Ingressantes</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <form action="#">
+        <div class="form-header">
+          <div class="tittle">
+            <h2>Cadastro de Ingressantes</h2>
+          </div>
+        </div>
+
+        <div class="input-group">
+          <div class="input-box">
+            <label for="firstname">Nome</label>
+            <input id="firstname" type="text" name="firstname" required />
+          </div>
+
+          <div class="input-box">
+            <label for="curse">Curso</label>
+
+            <select
+              class="form-select form-select-md"
+              aria-label=".form-select-md example"
+            >
+              <option selected></option>
+              <option>Matemática</option>
+              <option>Letras</option>
+              <option>Geografia</option>
+            </select>
+          </div>
+
+          <div class="input-box">
+            <label for="state">Estado</label>
+            <select
+              class="form-select form-select-md"
+              aria-label=".form-select-md example"
+            >
+              <option selected></option>
+              <option value="1">São Paulo</option>
+              <option value="2">Rio de Janeiro</option>
+              <option value="3">Minas Gerais</option>
+            </select>
+          </div>
+          <div class="input-box" id="city">
+            <label for="city">Cidade</label>
+            <select
+              id="city"
+              class="form-select form-select-md"
+              aria-label=".form-select-md example"
+            >
+              <option selected></option>
+              <option value="1">Mogi das Cruzes</option>
+              <option value="2">Suzano</option>
+              <option value="3">Poá</option>
+              <option value="3">Guararema</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="continue-button">
+          <button name="btn1"><a href="#">Voltar</a></button>
+          <button name="btn2"><a href="#">Gravar</a></button>
+        </div>
+        <script src="ingressante.js"></script>
+      </form>
+    </div>
+  </body>
+</html>
